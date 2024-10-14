@@ -38,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
     public leverScript LeverScript4;
     public leverScript LeverScript5;
     public leverScript LeverScript6;
+    public leverScript LeverScript7;
 
     public AudioSource jumpSFX;
     public AudioSource deathSFX;
@@ -163,6 +164,7 @@ public class PlayerMovement : MonoBehaviour
             LeverScript4.buttonFlipped = false;
             LeverScript5.buttonFlipped = true;
             LeverScript6.buttonFlipped = false;
+            LeverScript7.buttonFlipped = true;
             deathSFX.Play();
         }
         if (other.CompareTag("win"))
